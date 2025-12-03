@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>April Greiman: Digital Design Pioneer</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Internal CSS for experimentation */
+        .hero-quote {
+            font-style: italic;
+            color: var(--accent-color);
+            border-left: 3px solid var(--accent-color);
+            padding-left: 1rem;
+            margin: 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="header-container">
+        <div class="logo">
+            <h1>April Greiman</h1>
+            <span class="logo-subtitle">Digital Design Pioneer</span>
+        </div>
+        
+        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+        
+        <nav class="main-nav">
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="biography.html">Biography</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li class="dropdown">
+                    <a href="#">Explore</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#timeline">Timeline</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main class="page-container">
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Digital Design Pioneer</h2>
+                <div class="content-wrapper">
+                    <div class="text-content">
+                        <p>April Greiman revolutionized graphic design by embracing digital technology in the 1980s, 
+                        blending Swiss Modernism with West Coast postmodernism to create a vibrant, layered visual language.</p>
+                        
+                        <p>As one of the first designers to adopt the Macintosh computer, she challenged traditional 
+                        print conventions and pioneered what would become known as "New Wave" design.</p>
+                        
+                        <div class="hero-quote">
+                            "I approach design as an artist. It's a way of thinking, a way of expressing your view of the world."
+                        </div>
+                        
+                        <p>Her work bridges the gap between analog and digital, merging photography, video, 
+                        typography, and early computer graphics into cohesive visual experiences.</p>
+                        
+                        <p>Greiman's influence extends beyond her iconic posters and publications to her role as 
+                        an educator advocating for technological experimentation in design practice.</p>
+                        
+                        <a href="https://www.aigla.org/voices/april-greiman" target="_blank" class="external-link">
+                            Learn more at AIGA →
+                        </a>
+                    </div>
+                    <div class="image-content">
+                        <figure>
+                            <img src="images/april-portrait.jpeg" alt="April Greiman portrait" class="hover-scale" height="500px" width="500px">
+                            <figcaption>April Greiman in her studio, 1980s</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline" class="timeline-section">
+            <h3>Career Timeline</h3>
+            <table>
+                <tr>
+                    <th>Year</th>
+                    <th>Milestone</th>
+                    <th>Significance</th>
+                </tr>
+                <tr>
+                    <td>1970</td>
+                    <td>Studies at Basel School</td>
+                    <td>Learns under Wolfgang Weingart</td>
+                </tr>
+                <tr>
+                    <td>1976</td>
+                    <td>Moves to Los Angeles</td>
+                    <td>Establishes West Coast presence</td>
+                </tr>
+                <tr>
+                    <td>1979</td>
+                    <td>Founds Made in Space</td>
+                    <td>Creates independent studio</td>
+                </tr>
+                <tr>
+                    <td>1986</td>
+                    <td>Design Quarterly #133</td>
+                    <td>Pioneers digital design publication</td>
+                </tr>
+                <tr>
+                    <td>1990s</td>
+                    <td>Explores web design</td>
+                    <td>Transitions to digital media</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="quick-facts">
+            <h3>Key Contributions</h3>
+            <ul>
+                <li>Pioneered digital graphic design in the 1980s</li>
+                <li>Bridged Swiss Modernism with California culture</li>
+                <li>First to use Macintosh for major design projects</li>
+                <li>Influential educator and theorist</li>
+                <li>Championed experimental typography</li>
+            </ul>
+            
+            <blockquote>
+                "The computer is just a tool. It's the mind that creates."
+                <cite>— April Greiman</cite>
+            </blockquote>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>April Greiman Archive</h4>
+                    <p>Exploring the digital design revolution</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://www.cooperhewitt.org/2018/07/10/april-greiman/" target="_blank">Cooper Hewitt Collection</a></li>
+                        <li><a href="https://www.moma.org/artists/2342" target="_blank">MoMA Profile</a></li>
+                        <li><a href="https://www.youtube.com/watch?v=example" target="_blank">Interview Archive</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Form</h4>
+                    <form id="contact-form">
+                        <input type="email" placeholder="Your email" required>
+                        <textarea placeholder="Message" rows="2"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+            <p class="copyright">© 2024 April Greiman Digital Archive | Educational Project</p>
+        </div>
+    </footer>
+    
+    
+    <script>
+    // Mobile menu toggle
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mainNav = document.querySelector('.main-nav');
+        const dropdowns = document.querySelectorAll('.dropdown');
+        
+        // Toggle mobile menu
+        if (menuToggle) {
+            menuToggle.addEventListener('click', function() {
+                mainNav.classList.toggle('active');
+                this.textContent = mainNav.classList.contains('active') ? '✕' : '☰';
+            });
+        }
+        
+        // Handle dropdowns on mobile
+        dropdowns.forEach(dropdown => {
+            const dropdownLink = dropdown.querySelector('a');
+            
+            dropdownLink.addEventListener('click', function(e) {
+                if (window.innerWidth <= 768) {
+                    e.preventDefault();
+                    dropdown.classList.toggle('active');
+                    
+                    // Close other dropdowns
+                    dropdowns.forEach(other => {
+                        if (other !== dropdown) {
+                            other.classList.remove('active');
+                        }
+                    });
+                }
+            });
+        });
+        
+        // Close menu when clicking outside on mobile
+        document.addEventListener('click', function(e) {
+            if (window.innerWidth <= 768 && 
+                !e.target.closest('.main-nav') && 
+                !e.target.closest('.menu-toggle')) {
+                mainNav.classList.remove('active');
+                menuToggle.textContent = '☰';
+                dropdowns.forEach(dropdown => {
+                    dropdown.classList.remove('active');
+                });
+            }
+        });
+        
+        // Close menu when clicking a link
+        const navLinks = document.querySelectorAll('.nav-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    mainNav.classList.remove('active');
+                    menuToggle.textContent = '☰';
+                }
+            });
+        });
+    });
+</script>
+    
+    
+</body>
+</html>
